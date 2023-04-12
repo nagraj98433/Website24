@@ -1,0 +1,56 @@
+/* For Medium 400*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* For Medium 500*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* For Bold 700*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/* For Extra Bold 800*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+.NavMenu_container {
+  background-color: aqua;
+  margin: 0 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  font-size: 1.6rem !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+.box {
+  width: 397px;
+  background-color: pink;
+  text-align: center;
+  font-size: 2rem;
+}
+.navbar-nav a:nth-child(1) {
+  padding-right: 3rem !important;
+}
+.navbar-nav a:nth-child(2) {
+  padding-right: 3rem !important;
+}
+.navbar-nav a:nth-child(3) {
+  padding-right: 3rem !important;
+}
+.navbar-nav a:nth-child(4) {
+  padding-right: 3rem !important;
+}
+.navbar-nav a:nth-child(5) {
+  padding-right: 3rem !important;
+}
+.navbar-nav a:nth-child(6) {
+  padding-right: 3rem !important;
+}
+
+/* 397-r, 474-a, 574-3, 695-w, 767-| */
