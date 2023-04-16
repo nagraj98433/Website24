@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+
+.cardStyle {
+  max-width: 300px;
+  border: 1px solid gray;
+  padding: 1rem;
+}
+.imgRound img {
+  border-radius: 100%;
+}
+.imgRound {
+  margin-top: 0.8rem;
+}
+.Star_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 7rem;
+}
+.Star_container p small i {
+  color: green;
+}
+.NoClr small i {
+  color: lightgray;
+}

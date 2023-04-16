@@ -1,0 +1,26 @@
+/* For Extra Bold 800*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+.Banner_container {
+  background-image: url("../assets/Images/Bg_Banner.png");
+  background-size: 100% 100%;
+  height: 11vw;
+  /* display: flex; */
+  /* margin-top: 9rem; */
+  position: relative;
+  z-index: -1;
+}
+.CenterText {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 4vw;
+}

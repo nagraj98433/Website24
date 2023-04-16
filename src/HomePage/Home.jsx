@@ -1,10 +1,12 @@
 import React from 'react'
-import TopHeader from './TopHeader/TopHeader'
+import BannerBg from './BannerBg/BannerBg'
+import OfferSection from './OfferSection/OfferSection'
 
 function Home() {
   return (
     <>
-      <TopHeader />
+      <BannerBg />
+      <OfferSection />
     </>
   )
 }

@@ -10,47 +10,142 @@
 /* For Extra Bold 800*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
+body {
+  height: 1000px;
+  padding-top: 9rem;
+}
+.Position_fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
 html {
   font-size: 62.5%;
 }
 
 .NavMenu_container {
-  background-color: aqua;
   margin: 0 0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  max-width: 80%;
+  /* max-width: 80%; */
   margin: 0 auto 0 auto;
   font-size: 1.6rem !important;
+}
+.container-fluid {
+  max-width: 80%;
 }
 
 .navbar-collapse {
   flex-grow: 0 !important;
 }
 
-.box {
-  width: 397px;
-  background-color: pink;
-  text-align: center;
-  font-size: 2rem;
-}
 .navbar-nav a:nth-child(1) {
-  padding-right: 3rem !important;
+  margin-right: 2.4rem !important;
 }
 .navbar-nav a:nth-child(2) {
-  padding-right: 3rem !important;
+  margin-right: 2.4rem !important;
 }
 .navbar-nav a:nth-child(3) {
-  padding-right: 3rem !important;
+  margin-right: 2.4rem !important;
 }
 .navbar-nav a:nth-child(4) {
-  padding-right: 3rem !important;
+  margin-right: 2.4rem !important;
 }
 .navbar-nav a:nth-child(5) {
-  padding-right: 3rem !important;
+  margin-right: 2.4rem !important;
 }
 .navbar-nav a:nth-child(6) {
-  padding-right: 3rem !important;
+  margin-right: 2.4rem !important;
+}
+.logo {
+  max-width: 17%;
 }
 
-/* 397-r, 474-a, 574-3, 695-w, 767-| */
+.container-fluid {
+  padding: 0.6rem 0.7rem !important;
+}
+.bgRounded {
+  background-color: #2920c4;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 27px;
+  font-size: smaller;
+}
+a.active:not(:last-child) {
+  color: #2920c4 !important;
+  border-bottom: 2px solid black;
+}
+.nav-link {
+  padding-bottom: 0px !important;
+}
+
+@media screen and (min-width: 300px) and (max-width: 491px) {
+  body {
+    padding-top: 5rem;
+  }
+  .logo {
+    max-width: 12rem;
+  }
+  .container-fluid {
+    max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 431px) {
+  body {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 300px) {
+  body {
+    padding-top: 6.2rem;
+  }
+}
+
+@media screen and (min-width: 491px) and (max-width: 576px) {
+  body {
+    padding-top: 4.7rem;
+  }
+  .logo {
+    max-width: 12rem;
+  }
+}
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  body {
+    padding-top: 4.7rem;
+  }
+  .logo {
+    max-width: 12rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    padding-top: 4.7rem;
+  }
+  .logo {
+    max-width: 12rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    padding-top: 4.7rem;
+  }
+  .logo {
+    max-width: 12rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  body {
+    padding-top: 4.7rem;
+  }
+  .logo {
+    max-width: 15rem;
+  }
+}
+
+/* .BottomShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */

@@ -1,0 +1,54 @@
+/* For Bold 700*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+.Main_CostomerReview_Container {
+  background-color: white;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 2.8rem;
+  border-radius: 1rem;
+}
+.sub_Container {
+  display: flex;
+  justify-content: space-between;
+}
+.sub_Container div:first-child {
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  color: #2920c4;
+  font-weight: 700;
+}
+.sub_Container div:last-child {
+  align-self: center;
+}
+.Cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3% !important;
+  bottom: 1rem !important;
+}
+.NextPrev_icons span {
+  border: 1px solid #2920c4;
+  padding: 1px 7px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  color: #2920c4a8;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 260px) and (max-width: 400px) {
+  .sub_Container {
+    justify-content: center;
+  }
+  .sub_Container div:last-child {
+    display: none;
+  }
+}

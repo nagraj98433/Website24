@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+/* .HeadingSection div:first-child {
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  color: #2920c4;
+  font-weight: 700;
+} */
+
+.AboutUS_container {
+  background-color: white;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 2.8rem;
+  border-radius: 1rem;
+}
+.bg_img {
+  background-image: url("../assets/Images/Ellipse_13.jpg");
+  background-size: 100% 100%;
+  max-width: 29%;
+  height: 26rem;
+  position: relative;
+}
+.overlay_img {
+  position: absolute;
+  top: 30rem;
+  left: 14.8rem;
+}
+.overlay_img img {
+  max-width: 48%;
+}
+.FLex_container {
+  display: flex;
+  justify-content: space-between;
+}

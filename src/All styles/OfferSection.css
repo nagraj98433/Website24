@@ -1,0 +1,151 @@
+/* For Medium 400*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* For Medium 500*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+.bgClr {
+  background-color: #eeeeee;
+  height: auto;
+}
+.OfferMain_container {
+  background-color: white;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  border-radius: 1rem;
+}
+
+.offerSection {
+  background-image: url("../assets//Images/Mask_Group_6.png");
+  background-size: 100% 100%;
+  max-width: 100%;
+  height: 8rem;
+  position: relative;
+}
+.BookNow_secton {
+  position: absolute;
+  top: -27%;
+  width: 13%;
+  text-align: center;
+  left: 85%;
+}
+.BookNow_secton img {
+  max-width: 90%;
+}
+.content_img_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+.content_section {
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+.content_section ul li {
+  margin-bottom: 1.5rem;
+}
+.Video_section iframe {
+  border-radius: 1rem;
+}
+.Video_section {
+  padding: 1rem;
+}
+.Video_section {
+  width: 41rem;
+  height: 20rem;
+}
+.Video_section iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.BtnsSection {
+  display: flex;
+  justify-content: center;
+}
+.BtnsSection div button {
+  margin-right: 2rem;
+}
+.TotalCalculation_Container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ContentWrapper {
+  padding: 0 2.8rem 2.8rem 2.8rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .Video_section {
+    padding: 0;
+    width: 67vw;
+    height: 20rem;
+  }
+  .Video_section iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 872px) {
+  .content_img_section {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .ContentWrapper {
+    padding: 0 0 0 0;
+  }
+  .offerSection {
+    height: 3rem;
+  }
+  .BookNow_secton {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 430px) {
+  .ContentWrapper {
+    padding: 0 0 0 0;
+  }
+  .offerSection {
+    height: 4rem;
+  }
+  .BookNow_secton {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 576px) {
+  .ContentWrapper {
+    padding: 0 0 0 0;
+  }
+  .offerSection {
+    height: 5rem;
+  }
+  .BookNow_secton {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .offerSection {
+    height: 5rem;
+  }
+  .BookNow_secton img {
+    max-width: 96%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .offerSection {
+    height: 6rem;
+  }
+  .BookNow_secton img {
+    max-width: 92%;
+  }
+}
