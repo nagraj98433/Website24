@@ -9,6 +9,12 @@ import Blogs from '../Blogs/Blogs'
 import AboutUS from '../AboutUS/AboutUS'
 import BookNowPic from '../../assets/Images/BookNow.png'
 import SubMenuTab from '../SubMenuTab/SubMenuTab'
+import { Outlet, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+
+
 
 
 
@@ -26,7 +32,9 @@ function OfferSection() {
               <div className="offerSection">
 
                 <div className="BookNow_secton">
-                  <img src={BookNowPic} alt="BookNowBtn" type='button' className='img-fluid' />
+                  <NavLink exact to="/BookNow" className="nav-link">
+                    <img src={BookNowPic} alt="BookNowBtn" type='button' className='img-fluid' />
+                  </NavLink>
                 </div>
 
               </div>
@@ -51,17 +59,17 @@ function OfferSection() {
               </div>
             </div>
 
-            {/* <div className="BtnsSection">
-              <div><button type="button" className="btn btn-primary btn-lg">Chat 24/7</button></div>
-              <div><button type="button" className="btn btn-primary btn-lg">Call Now </button></div>
-              <div><button type="button" className="btn btn-primary btn-lg">Book Now @499/-</button></div>
-            </div> */}
+            <div className="BtnsSection">
+              {/* <div><button type="button" className="btn btn-primary btn-lg">Chat 24/7</button></div> */}
+              <button type="button" class="btn btn-primary btn-lg fs-2">Call Now</button>
+              {/* <div><button type="button" className="btn btn-primary btn-lg">Book Now @499/-</button></div> */}
+            </div>
 
           </div>
 
-          {/* <div className="TotalCalculation_Container mt-4 border">
+          <div className="TotalCalculation_Container mt-4 border">
             <div className="location">
-              <div className="dropdown">
+              <div className="dropdown pt-3 ">
                 <button className="btn border btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Mumbai
                 </button>
@@ -72,6 +80,8 @@ function OfferSection() {
                 </ul>
               </div>
             </div>
+
+
             <div className="Total text-center">
               <h1 className='fw-bold'>1280</h1>
               <p>Total</p>
@@ -80,6 +90,11 @@ function OfferSection() {
               <h1 className='fw-bold'>980</h1>
               <p>On duty</p>
             </div>
+
+
+
+
+
             <div className="Available text-center">
               <h1 className='fw-bold'>300</h1>
               <p>Available</p>
@@ -88,15 +103,74 @@ function OfferSection() {
               <h1 className='fw-bold'>13,00,000+</h1>
               <p>Patients Visits</p>
             </div>
-          </div> */}
+
+
+          </div>
+
+
+          <div className='container-fluid'>
+            <div className='row mb-2'>
+              <div className="col fw-bold">Today's Ongoing Attendant Services</div>
+            </div>
+            <div className='row'>
+              <div className="col">Mumbai</div>
+            </div>
+            <div className='row'>
+              <div className="col">
+                <div class="progress-stacked">
+                  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style={{ width: '8%' }}>
+                    <div class="progress-bar bg-danger"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className="col">Delhi-NCR</div>
+            </div>
+            <div className='row'>
+              <div className="col">
+                <div class="progress-stacked">
+                  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style={{ width: '8%' }}>
+                    <div class="progress-bar bg-danger"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='row mt-5'>
+              <div className='col'>
+                <div className="row">
+                  <div className="col-1 bg-primary me-3"></div>
+                  <div className="col-8 fw-bold">On Duty Caregivers</div>
+                </div>
+              </div>
+              <div className='col'>
+                <div className="row">
+                  <div className="col-1 bg-danger me-3"></div>
+                  <div className="col-8 fw-bold">CG's Available</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          {/* Sub Tab */}
+          <SubMenuTab />
+
         </div>
 
 
 
 
-
         {/* Customer Review */}
-        {/* <CustomerReview blogs="CUSTOMER'S REVIEWS" /> */}
+        <CustomerReview blogs="CUSTOMER'S REVIEWS" />
 
 
         {/* Blogs Section */}
@@ -105,13 +179,12 @@ function OfferSection() {
 
 
         {/* FAQ Section */}
-        {/* <FAQ /> */}
+        <FAQ />
 
         {/* About us Section */}
         {/* <AboutUS /> */}
 
-        {/* Sub Tab */}
-        {/* <SubMenuTab /> */}
+
 
       </section>
     </>

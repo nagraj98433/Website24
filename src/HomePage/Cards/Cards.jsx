@@ -6,7 +6,7 @@ import '../../All styles/Cards.css'
 function Cards() {
   return (
     <>
-      <div className="card mb-3 cardStyle" style={{ maxWidth: '300px' }}>
+      {/* <div className="card mb-3 cardStyle" style={{ maxWidth: '300px' }}>
         <div className="row g-0">
           <div className="col-md-3 imgRound">
             <img src={manpic} className="img-fluid" alt="..." />
@@ -25,7 +25,9 @@ function Cards() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
     </>
   )
 }

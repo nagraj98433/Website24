@@ -43,6 +43,15 @@ html {
   color: #2920c4a8;
   font-size: 1.5rem;
 }
+.Speaker_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Call_Availibilty_btn {
+  display: flex;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+}
 
 @media screen and (min-width: 260px) and (max-width: 400px) {
   .sub_Container {

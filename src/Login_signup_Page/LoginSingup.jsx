@@ -1,10 +1,11 @@
 import React from 'react'
+import '../All styles/Login_SignupPage.css'
 
 function LoginSingup() {
   return (
-    <div>
-      <h1>This is Login page</h1>
-    </div>
+    <>
+      <div className='mt-5 Login_Signup'><p>Welcome in Care24: "Login/Signup"</p></div>
+    </>
   )
 }
 

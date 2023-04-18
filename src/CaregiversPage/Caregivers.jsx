@@ -1,10 +1,11 @@
 import React from 'react'
+import '../All styles/CareGivers_page.css'
 
 function Caregivers() {
   return (
-    <div>
-      <h1>This is Caregivers page</h1>
-    </div>
+    <>
+      <div className='mt-5 Caregivers'><p>Welcome in Care24: "Caregivers"</p></div>
+    </>
   )
 }
 

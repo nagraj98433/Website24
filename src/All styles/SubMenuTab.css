@@ -4,12 +4,18 @@ html {
 
 .Tab_Section {
   background-color: white;
-  max-width: 70%;
+  /* max-width: 70%; */
   margin: 0 auto 0 auto;
   border-radius: 2.9rem;
   padding: 0.3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -1.7rem;
+  width: 90%;
+  left: 5.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .FontSize {
   font-size: 1.4rem;
@@ -30,4 +36,56 @@ html {
   color: white;
   border-radius: 2rem;
   font-size: 1.5rem;
+}
+.PadLeft {
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .PadLeft {
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+  .SearchIconStyle {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Hide_Show {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  .Tab_Section {
+    left: 1.8rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .Tab_Section {
+    left: 2.2rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .Tab_Section {
+    left: 3.2rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .Tab_Section {
+    left: 4.2rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1920px) {
+  .SearchIconStyle {
+    display: block;
+  }
 }
