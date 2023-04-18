@@ -1,11 +1,11 @@
 import React from 'react'
-import BannerBg from './BannerBg/BannerBg'
+// import BannerBg from './BannerBg/BannerBg'
 import OfferSection from './OfferSection/OfferSection'
 
 function Home() {
   return (
     <>
-      <BannerBg />
+      {/* <BannerBg /> */}
       <OfferSection />
     </>
   )

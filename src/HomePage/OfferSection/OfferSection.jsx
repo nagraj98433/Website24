@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../../All styles/OfferSection.css'
 import CustomerReview from '../CustomerReview/CustomerReview'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,51 +11,128 @@ import BookNowPic from '../../assets/Images/BookNow.png'
 import SubMenuTab from '../SubMenuTab/SubMenuTab'
 import { Outlet, NavLink } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import BannerBg from '../BannerBg/BannerBg'
+
 
 
 
 
 
 function OfferSection() {
+
+  let [DBlock, setDBlock] = useState(1)
+  let [Active, setActive] = useState(1)
+
+  const ToggleTab = (val) => {
+    setDBlock(val)
+    setActive(val)
+  }
+
+
+
   return (
     <>
+      <BannerBg taggleFun={ToggleTab} />
+
       <section className='bgClr'>
 
         <div className="OfferMain_container">
 
           <div className="ContentWrapper">
 
+            <div className={`${DBlock === 1 ? 'd-block' : 'd-none'}`}>
+              <div className="Imgoverlay_section">
+                <div className="offerSection">
 
-            <div className="Imgoverlay_section">
-              <div className="offerSection">
+                  <div className="BookNow_secton">
+                    <NavLink exact to="/BookNow" className="nav-link">
+                      <img src={BookNowPic} alt="BookNowBtn" type='button' className='img-fluid' />
+                    </NavLink>
+                  </div>
 
-                <div className="BookNow_secton">
-                  <NavLink exact to="/BookNow" className="nav-link">
-                    <img src={BookNowPic} alt="BookNowBtn" type='button' className='img-fluid' />
-                  </NavLink>
+                </div>
+              </div>
+
+              <div className="content_img_section">
+                <div className="content_section">
+                  <ul>
+                    <li>Oral Hygiene and Bed Bath/ Sponge Bath</li>
+                    <li>Cleanliness of patient's room</li>
+                    <li>Feeding and Bathroom assistance</li>
+                    <li>Assist with walking and home exercise when required</li>
+                    <li>Turn position in bed for bedridden</li>
+                    <li>Companionship and polite conversations</li>
+                  </ul>
                 </div>
 
+                <div className="Video_section">
+                  <iframe src="https://www.youtube.com/embed/tqczsLqkd2g" title="YouTube video player" frameBorder="0" allowFullScreen>
+                  </iframe>
+
+                </div>
               </div>
             </div>
+            <div className={DBlock === 2 ? 'd-block' : 'd-none'}>
+              {/* <div className="Imgoverlay_section">
+                <div className="offerSection">
 
-            <div className="content_img_section">
-              <div className="content_section">
-                <ul>
-                  <li>Oral Hygiene and Bed Bath/ Sponge Bath</li>
-                  <li>Cleanliness of patient's room</li>
-                  <li>Feeding and Bathroom assistance</li>
-                  <li>Assist with walking and home exercise when required</li>
-                  <li>Turn position in bed for bedridden</li>
-                  <li>Companionship and polite conversations</li>
-                </ul>
+                  <div className="BookNow_secton">
+                    <NavLink exact to="/BookNow" className="nav-link">
+                      <img src={BookNowPic} alt="BookNowBtn" type='button' className='img-fluid' />
+                    </NavLink>
+                  </div>
+
+                </div>
+              </div> */}
+
+              <div className="content_img_section">
+                <div className="content_section">
+                  <ul>
+                    <li>Fixing a diet plan</li>
+                    <li>Giving medicines on time</li>
+                    <li>Blood Pressure Checkup</li>
+                    <li>Pulse Oximeter</li>
+                    <li>Oral Hygiene and Bed Bath/Sponge Bath</li>
+                    <li>Feeding and bathroom assistance</li>
+                  </ul>
+                </div>
+
+                <div className="Video_section">
+                  <iframe src="https://www.youtube.com/embed/hUu5Qi79clI" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+
+                </div>
               </div>
+            </div>
+            <div className={DBlock === 3 ? 'd-block' : 'd-none'}>
+              {/* <div className="Imgoverlay_section">
+                <div className="offerSection">
 
-              <div className="Video_section">
-                <iframe src="https://www.youtube.com/embed/tqczsLqkd2g" title="YouTube video player" frameBorder="0" allowFullScreen>
-                </iframe>
+                  <div className="BookNow_secton">
+                    <NavLink exact to="/BookNow" className="nav-link">
+                      <img src={BookNowPic} alt="BookNowBtn" type='button' className='img-fluid' />
+                    </NavLink>
+                  </div>
 
+                </div>
+              </div> */}
+
+              <div className="content_img_section">
+                <div className="content_section">
+                  <ul>
+                    <li>Fixing a diet plan</li>
+                    <li>Giving medicines on time</li>
+                    <li>Caring and dressing wounds </li>
+                    <li>Monitoring of Vital Signs</li>
+                    <li>Intravenous medication and IV fluid management</li>
+                    <li>Nebulization</li>
+                  </ul>
+                </div>
+
+                <div className="Video_section">
+
+                  <iframe src="https://www.youtube.com/embed/MAIYNrQuJ90" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+
+                </div>
               </div>
             </div>
 
@@ -162,7 +239,7 @@ function OfferSection() {
 
 
           {/* Sub Tab */}
-          <SubMenuTab />
+          <SubMenuTab taggleFun={ToggleTab} active={Active} />
 
         </div>
 
@@ -186,7 +263,7 @@ function OfferSection() {
 
 
 
-      </section>
+      </section >
     </>
   )
 }

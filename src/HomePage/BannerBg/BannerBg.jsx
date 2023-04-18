@@ -14,42 +14,26 @@ import { Outlet, NavLink } from "react-router-dom";
 
 
 
-function BannerBg() {
+function BannerBg(props) {
 
   return (
     <>
       <div className="Banner_container">
         <div className='CenterText'>WE CARE FOR YOU</div>
-
-
-
-
-
-        {/* Offer Section */}
-
-
-
-
-        {/* Offer Section end */}
-
-
       </div>
 
-
-
-
-
+      {/* Tab section */}
 
       <div className="Tab_Section1">
         <ul className="nav">
           <li className="nav-item">
-            <a className="nav-link active FontSize1" aria-current="page" href="#">Attandent</a>
+            <a className="nav-link active FontSize1" aria-current="page" href="#" onClick={() => { props.taggleFun(1) }}>Attandent</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link FontSize1" href="#">Elder Care</a>
+            <a className="nav-link FontSize1" href="#" onClick={() => { props.taggleFun(2) }}>Elder Care</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link FontSize1" href="#">Nursing</a>
+            <a className="nav-link FontSize1" href="#" onClick={() => { props.taggleFun(3) }}>Nursing</a>
           </li>
 
         </ul>

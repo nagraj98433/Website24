@@ -40,6 +40,9 @@ html {
 .PadLeft {
   padding-left: 2rem;
 }
+.Active_Class {
+  color: #2bc26a;
+}
 
 @media screen and (max-width: 500px) {
   .PadLeft {
