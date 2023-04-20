@@ -1,0 +1,154 @@
+html {
+  font-size: 62.5%;
+}
+
+.footerImg_in_BG {
+  background-image: url("../assets/Images/FooterPic_overlay.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 40.5rem;
+}
+.Main_container {
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 7rem 0 0 0;
+}
+.footer_flex_Container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerImg img {
+  width: 58%;
+}
+.AboutUS_content {
+  margin: 2.3rem 0 0 0;
+  color: white;
+}
+.AboutUS_content_description {
+  color: #cecece;
+  font-family: "poppins", sans-serif;
+}
+.AboutUS_content_description small {
+  width: 10.3rem;
+  display: inline-block;
+}
+.Services_content,
+.Quick_content_content,
+.Connect_content {
+  color: white;
+}
+.Services_content_description,
+.Quick_content_description,
+.Connect_content_description,
+.Text_light {
+  color: #cecece;
+  font-family: "poppins", sans-serif;
+}
+
+.Inner_flex_container {
+  display: flex;
+}
+.Line_Height {
+  line-height: 3.3rem;
+}
+.marginRight {
+  margin: 0 6.1rem 0 0;
+}
+.footer_underLine_container {
+  max-width: 73%;
+  margin: 0 auto 0 auto;
+}
+.Border_bottom {
+  border-bottom: 2px solid white;
+}
+.PhoneIcon_style,
+.MailIcon_style {
+  font-size: 1.2rem;
+  margin: 0 1rem 0 0;
+}
+.FacebookIcon_style,
+.InstagramIcon_style,
+.TwitterIcon_style {
+  font-size: 1.2rem;
+}
+.Clr_white {
+  margin: 0 2rem 0 0;
+  color: white;
+}
+@media screen and (min-width: 300px) and (max-width: 310px) {
+  .footer_flex_Container {
+    flex-direction: column;
+  }
+  .Inner_flex_container {
+    flex-direction: column;
+  }
+  .footerImg_in_BG {
+    height: auto;
+  }
+  .AboutUS_content_description small {
+    width: 17.3rem;
+  }
+  .Services_content {
+    margin: 2rem 0 0 0;
+  }
+  .footerImg img {
+    width: 21%;
+  }
+  .Line_Height {
+    line-height: 2.3rem;
+  }
+  .footer_underLine_container {
+    margin: 0 0 0 0;
+  }
+  .Main_container {
+    padding: 4rem 0 0 0;
+  }
+  .footerImg {
+    text-align: center;
+  }
+  .footerImg img {
+    width: 9rem;
+  }
+  .footer_underLine_container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 576px) {
+  .footer_flex_Container {
+    flex-direction: row;
+  }
+  .Inner_flex_container {
+    flex-direction: column;
+  }
+  .footerImg_in_BG {
+    height: auto;
+  }
+  .AboutUS_content_description small {
+    width: 17.3rem;
+  }
+  .Services_content {
+    margin: 2rem 0 0 0;
+  }
+  .footerImg img {
+    width: 21%;
+  }
+  .Line_Height {
+    line-height: 2.3rem;
+  }
+  .footer_underLine_container {
+    margin: 0 0 0 0;
+  }
+  .Main_container {
+    padding: 4rem 0 0 0;
+  }
+  .footerImg {
+    text-align: left;
+  }
+  .footerImg img {
+    width: 9rem;
+  }
+  .footer_underLine_container {
+    max-width: 100%;
+  }
+}

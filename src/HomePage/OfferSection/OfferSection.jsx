@@ -12,6 +12,7 @@ import SubMenuTab from '../SubMenuTab/SubMenuTab'
 import { Outlet, NavLink } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import BannerBg from '../BannerBg/BannerBg'
+import FooterPage from '../FooterPage/FooterPage'
 
 
 
@@ -32,7 +33,7 @@ function OfferSection() {
 
   return (
     <>
-      <BannerBg taggleFun={ToggleTab} />
+      <BannerBg taggleFun={ToggleTab} active={Active} />
 
       <section className='bgClr'>
 
@@ -210,10 +211,10 @@ function OfferSection() {
             <div className='row'>
               <div className="col">
                 <div class="progress-stacked">
-                  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style={{ width: '50%' }}>
+                  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style={{ width: '45%' }}>
                     <div class="progress-bar"></div>
                   </div>
-                  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style={{ width: '8%' }}>
+                  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style={{ width: '7%' }}>
                     <div class="progress-bar bg-danger"></div>
                   </div>
                 </div>
@@ -223,13 +224,13 @@ function OfferSection() {
               <div className='col'>
                 <div className="row">
                   <div className="col-1 bg-primary me-3"></div>
-                  <div className="col-8 fw-bold">On Duty Caregivers</div>
+                  <div className="col-8 fw-bold FontReduced">On Duty Caregivers</div>
                 </div>
               </div>
               <div className='col'>
                 <div className="row">
                   <div className="col-1 bg-danger me-3"></div>
-                  <div className="col-8 fw-bold">CG's Available</div>
+                  <div className="col-8 fw-bold FontReduced">CG's Available</div>
                 </div>
               </div>
 
@@ -260,6 +261,10 @@ function OfferSection() {
 
         {/* About us Section */}
         {/* <AboutUS /> */}
+
+        {/* Footer Section */}
+        <FooterPage />
+
 
 
 

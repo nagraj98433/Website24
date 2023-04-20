@@ -27,13 +27,13 @@ function BannerBg(props) {
       <div className="Tab_Section1">
         <ul className="nav">
           <li className="nav-item">
-            <a className="nav-link active FontSize1" aria-current="page" href="#" onClick={() => { props.taggleFun(1) }}>Attandent</a>
+            <a className={`nav-link ${props.active === 1 ? 'Active_Class' : 'text-dark'} FontSize`} aria-current="page" href="#" onClick={() => { props.taggleFun(1) }}>Attandent</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link FontSize1" href="#" onClick={() => { props.taggleFun(2) }}>Elder Care</a>
+            <a className={`nav-link ${props.active === 2 ? 'Active_Class' : 'text-dark'} FontSize`} href="#" onClick={() => { props.taggleFun(2) }}>Elder Care</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link FontSize1" href="#" onClick={() => { props.taggleFun(3) }}>Nursing</a>
+            <a className={`nav-link ${props.active === 3 ? 'Active_Class' : 'text-dark'} FontSize`} href="#" onClick={() => { props.taggleFun(3) }}>Nursing</a>
           </li>
 
         </ul>

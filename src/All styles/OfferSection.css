@@ -87,6 +87,44 @@ html {
 .progress-stacked {
   background-color: none !important;
 }
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .FontReduced {
+    font-size: 0.7rem;
+    padding: 0 0 !important;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 360px) {
+  .FontReduced {
+    font-size: 0.8rem;
+  }
+  .content_section {
+    font-size: 0.8rem;
+    padding: 2rem 0 0 0;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 420px) {
+  .FontReduced {
+    font-size: 0.8rem;
+  }
+  .content_section {
+    font-size: 0.9rem;
+    padding: 2rem 0 0 0;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 497px) {
+  .content_section {
+    padding: 2rem 0 0 0;
+    font-size: 0.9rem;
+  }
+  .content_section ul {
+    padding-left: 1rem;
+  }
+  .FontReduced {
+    font-size: 0.8rem;
+  }
+}
 
 @media screen and (min-width: 300px) and (max-width: 576px) {
   .Video_section {
