@@ -9,43 +9,28 @@ import Cards from '../Cards/Cards'
 
 function CustomerReview(props) {
 
-  const CallersList1 = [{ Img: manpic, Name: 'Niha' }, { Img: manpic, Name: 'Vishal' }, { Img: manpic, Name: 'Poonam' }]
-  // const CallersList2 = [{ Img: manpic, Name: 'Vishal' }, { Img: manpic, Name: 'Niha' }, { Img: manpic, Name: 'Poonam' }]
-  // const CallersList3 = [{ Img: manpic, Name: 'Poonam' }, { Img: manpic, Name: 'Vishal' }, { Img: manpic, Name: 'Niha' }]
+  const [arrayValues, setArrayValues] = useState([]);
+  const [arrayValues1, setArrayValues1] = useState([]);
+  const [arrayValues2, setArrayValues2] = useState([]);
 
-  let [Callers1, SetCallers1] = useState(CallersList1)
-  // let [Callers2, SetCallers2] = useState(CallersList2)
-  // let [Callers3, SetCallers3] = useState(CallersList3)
-
-
-
-  // useEffect(() => {
-
-  //   setInterval(() => {
-  //     console.log([Math.floor(Math.random() * 3)]);
-  //     // console.log(Callers1[Math.floor(Math.random() * 3)]);
-  //     // SetCallers1(Callers1[Math.floor(Math.random() * 3)])
-  //     SetCallers1(typeof (Math.floor(Math.random() * 3)))
-
-  //   }, 5000)
-
-  // },)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // code to fetch new array values
+      const newArrayValues = [{ Img: manpic, Name: "Nilesh" }, { Img: manpic, Name: "Monalisa" }, { Img: manpic, Name: "Sushila" }, { Img: manpic, Name: "Steffe" }];
+      const newArrayValues1 = [{ Img: manpic, Name: "Niha" }, { Img: manpic, Name: "Vishal" }, { Img: manpic, Name: "Poonam" },]
+      const newArrayValues2 = [{ Img: manpic, Name: "Prasad" }, { Img: manpic, Name: "Pradeep" }, { Img: manpic, Name: "Sandeep" },]
+      setArrayValues(newArrayValues[[Math.floor(Math.random() * 4)]]);
+      setArrayValues1(newArrayValues1[[Math.floor(Math.random() * 3)]]);
+      setArrayValues2(newArrayValues2[[Math.floor(Math.random() * 3)]]);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
 
-
-
-  setTimeout(() => {
-    SetCount(++Count)
-    // console.log([Math.floor(Math.random() * 3)]);
-    // console.log(Callers1[Math.floor(Math.random() * 3)]);
-    // SetCallers1(Callers1[0])
-
-  }, 5000)
-
-  console.log(Callers1);
-
-
-
+  // console.log([Math.floor(Math.random() * 4)]);
+  // console.log(arrayValues);
+  // console.log(arrayValues.Img);
+  // console.log(arrayValues.Name);
 
 
 
@@ -58,21 +43,21 @@ function CustomerReview(props) {
           <div class="card imgRound bg-secondary" style={{ width: '14rem' }}>
             <img src={manpic} className="img-fluid" alt="..." />
             <div class="card-body bg-dark">
-              <h5 class="card-title text-center text-light">Niha</h5>
+              <h5 class="card-title text-center text-light">{arrayValues.Name}</h5>
 
             </div>
           </div>
           <div class="card imgRound bg-secondary" style={{ width: '14rem' }}>
             <img src={manpic} className="img-fluid" alt="..." />
             <div class="card-body bg-dark">
-              <h5 class="card-title text-center text-light">Vishal</h5>
+              <h5 class="card-title text-center text-light">{arrayValues1.Name}</h5>
 
             </div>
           </div>
           <div class="card imgRound bg-secondary" style={{ width: '14rem' }}>
             <img src={manpic} className="img-fluid" alt="..." />
             <div class="card-body bg-dark">
-              <h5 class="card-title text-center text-light">Poonam</h5>
+              <h5 class="card-title text-center text-light">{arrayValues2.Name}</h5>
 
             </div>
           </div>

@@ -87,6 +87,37 @@ html {
 .progress-stacked {
   background-color: none !important;
 }
+.flex_container1 {
+  display: flex;
+  justify-content: space-around;
+}
+.flex_container2 {
+  display: flex;
+  justify-content: space-around;
+}
+.Circle {
+  background: red;
+  padding: 13px 13px;
+  border-radius: 100%;
+  max-width: 1rem;
+}
+.FOntSize {
+  font-size: 17px;
+  font-weight: 800;
+  font-family: "poppins", sans-serif;
+}
+.SM-Hide {
+  display: none;
+}
+.marginLeft1 {
+  margin-left: 1.4rem;
+}
+.marginLeft2 {
+  margin-left: 4.5rem;
+}
+
+/*  Media Queries start*/
+
 @media screen and (min-width: 300px) and (max-width: 350px) {
   .FontReduced {
     font-size: 0.7rem;
@@ -98,11 +129,17 @@ html {
   .FontReduced {
     font-size: 0.8rem;
   }
+}
+@media screen and (min-width: 300px) and (max-width: 360px) {
   .content_section {
     font-size: 0.8rem;
     padding: 2rem 0 0 0;
   }
+  .content_section ul {
+    padding-left: 1rem;
+  }
 }
+
 @media screen and (min-width: 360px) and (max-width: 420px) {
   .FontReduced {
     font-size: 0.8rem;
@@ -116,7 +153,7 @@ html {
 @media screen and (min-width: 360px) and (max-width: 497px) {
   .content_section {
     padding: 2rem 0 0 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .content_section ul {
     padding-left: 1rem;
@@ -229,25 +266,15 @@ html {
     left: 15rem;
   }
 }
-/* @media screen and (min-width: 360px) and (max-width: 576px) {
-  .TotalCalculation_Container {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .location {
-    width: 100%;
-    background-color: pink;
-    text-align: center;
+@media screen and (max-width: 576px) {
+  .DeskTop {
+    display: none;
   }
-  .Mobile_Align {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .SM-Hide {
+    display: block;
   }
-  .Mobile_Align1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .SM-Graph-Hide {
+    display: none;
   }
-} */
+}

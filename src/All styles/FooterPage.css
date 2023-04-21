@@ -6,12 +6,12 @@ html {
   background-image: url("../assets/Images/FooterPic_overlay.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 40.5rem;
+  height: 32rem;
 }
 .Main_container {
   max-width: 80%;
   margin: 0 auto 0 auto;
-  padding: 7rem 0 0 0;
+  padding: 4rem 0 0 0;
 }
 .footer_flex_Container {
   display: flex;
@@ -49,7 +49,7 @@ html {
   display: flex;
 }
 .Line_Height {
-  line-height: 3.3rem;
+  line-height: 2.5rem;
 }
 .marginRight {
   margin: 0 6.1rem 0 0;
@@ -75,6 +75,23 @@ html {
   margin: 0 2rem 0 0;
   color: white;
 }
+
+@media screen and (min-width: 310px) and (max-width: 402px) {
+  .Quick_content_content h4 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 408px) {
+  .PhoneIcon_style,
+  .MailIcon_style {
+    font-size: 9px;
+    margin: 0 3px 0 0;
+  }
+  .MailIcon_container {
+    font-size: 9px;
+  }
+}
+
 @media screen and (min-width: 300px) and (max-width: 310px) {
   .footer_flex_Container {
     flex-direction: column;

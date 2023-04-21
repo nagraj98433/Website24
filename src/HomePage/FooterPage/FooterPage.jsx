@@ -59,16 +59,16 @@ function FooterPage() {
                   <div className='Connect_content_description'>
                     <ul style={{ listStyleType: 'none' }}>
                       <li><span className='PhoneIcon_style'><i class="fas fa-phone-alt"></i></span> 080690 48802</li>
-                      <li><span className='MailIcon_style'><i class="fas fa-envelope"></i></span> support@care24.co.in</li>
-                      <li>
+                      <li className='MailIcon_container'><span className='MailIcon_style'><i class="fas fa-envelope"></i></span> support@care24.co.in</li>
+                      <li className='mt-3'>
                         <a href="" className='Clr_white'>
-                          <span className='FacebookIcon_style'><i class="fab fa-facebook-f"></i></span>
+                          <span className='FacebookIcon_style'><i class="fab fa-facebook-f fs-3"></i></span>
                         </a>
                         <a href="" className='Clr_white'>
-                          <span className='InstagramIcon_style'><i class="fab fa-instagram"></i></span>
+                          <span className='InstagramIcon_style'><i class="fab fa-instagram fs-3"></i></span>
                         </a>
                         <a href="" className='Clr_white'>
-                          <span className='TwitterIcon_style'><i class="fab fa-twitter"></i></span>
+                          <span className='TwitterIcon_style'><i class="fab fa-twitter fs-3"></i></span>
                         </a>
                       </li>
                     </ul>

@@ -145,7 +145,10 @@ function OfferSection() {
 
           </div>
 
-          <div className="TotalCalculation_Container mt-4 border">
+
+          {/* Total People on work */}
+
+          <div className="TotalCalculation_Container mt-4 border DeskTop">
             <div className="location">
               <div className="dropdown pt-3 ">
                 <button className="btn border btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -170,9 +173,6 @@ function OfferSection() {
             </div>
 
 
-
-
-
             <div className="Available text-center">
               <h1 className='fw-bold'>300</h1>
               <p>Available</p>
@@ -185,8 +185,64 @@ function OfferSection() {
 
           </div>
 
+          {/* Total People on work */}
 
-          <div className='container-fluid'>
+
+          {/* Total People on work for mobile */}
+
+          <div className='Number_of_people_container SM-Hide'>
+            <div className='Dropdown_container text-center'>
+              <div className="dropdown pt-3 ">
+                <button className="btn border btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mumbai
+                </button>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">Delhi</a></li>
+                  <li><a className="dropdown-item" href="#">Banglore</a></li>
+                  <li><a className="dropdown-item" href="#">Mumbai</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className='flex_container1 mt-5' >
+              <div>
+                <div className='Circle'></div>
+                <div className='text-center FOntSize'>1280</div>
+                <div>Total</div>
+              </div>
+              <div>
+                <div className='Circle'></div>
+                <div className='text-center FOntSize'>980</div>
+                <div>On duty </div>
+              </div>
+
+            </div>
+            <div className='flex_container2 mt-3' >
+              <div>
+                <div className='Circle marginLeft1'></div>
+                <div className='text-center FOntSize'>300</div>
+                <div>Available</div>
+              </div>
+              <div>
+                <div className='Circle marginLeft2'></div>
+                <div className='text-center FOntSize'>13,00,000+</div>
+                <div>Patients visit </div>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Total People on work */}
+
+
+
+
+
+
+
+          {/* Graph */}
+
+
+          <div className='container-fluid SM-Graph-Hide'>
             <div className='row mb-2'>
               <div className="col fw-bold">Today's Ongoing Attendant Services</div>
             </div>
