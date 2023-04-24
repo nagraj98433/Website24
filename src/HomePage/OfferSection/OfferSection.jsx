@@ -139,7 +139,7 @@ function OfferSection() {
 
             <div className="BtnsSection">
               {/* <div><button type="button" className="btn btn-primary btn-lg">Chat 24/7</button></div> */}
-              <button type="button" class="btn btn-primary btn-lg fs-2">Call Now</button>
+              <button type="button" class="btn btn-primary btn-lg font_Size">Call Now</button>
               {/* <div><button type="button" className="btn btn-primary btn-lg">Book Now @499/-</button></div> */}
             </div>
 
@@ -312,11 +312,11 @@ function OfferSection() {
 
 
 
+        {/* About us Section */}
+        <AboutUS />
+
         {/* FAQ Section */}
         <FAQ />
-
-        {/* About us Section */}
-        {/* <AboutUS /> */}
 
         {/* Footer Section */}
         <FooterPage />

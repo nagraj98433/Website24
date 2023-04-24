@@ -17,6 +17,7 @@ html {
   margin: 0 auto 0 auto;
   padding: 2.8rem;
   border-radius: 1rem;
+  z-index: -1;
 }
 .BorderStyle {
   border: 1.5px solid #e2dbdb !important;

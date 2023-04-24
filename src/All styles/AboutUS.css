@@ -17,23 +17,51 @@ html {
   margin: 0 auto 0 auto;
   padding: 2.8rem;
   border-radius: 1rem;
+  height: auto;
 }
-.bg_img {
+.A_family_pic {
   background-image: url("../assets/Images/Ellipse_13.jpg");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
-  max-width: 29%;
+  max-width: 26rem;
   height: 26rem;
+}
+.Overlay_container {
   position: relative;
 }
-.overlay_img {
+.Img_container {
   position: absolute;
-  top: 30rem;
-  left: 14.8rem;
+  top: 51px;
+  left: 9px;
 }
-.overlay_img img {
-  max-width: 48%;
+.Img_container img {
+  max-width: 25.8rem;
 }
-.FLex_container {
-  display: flex;
-  justify-content: space-between;
+.Heding {
+  font-size: 3vw;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  color: #2920c4;
+}
+.Content,
+.Content-1,
+.Content-2,
+.Content-3 {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.F_size {
+  font-size: 13px;
+}
+@media screen and (min-width: 1236px) and (max-width: 1400px) {
+  .Img_container img {
+    max-width: 24.8rem;
+  }
+}
+@media screen and (min-width: 1580px) and (max-width: 2100px) {
+  .Img_container img {
+    max-width: 23.8rem;
+  }
 }
